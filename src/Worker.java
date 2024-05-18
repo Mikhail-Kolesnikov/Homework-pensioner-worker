@@ -3,7 +3,7 @@ import java.time.LocalDate;
 public class Worker extends Person {
 
 
-    public Worker(String name, int age, int height, int countOfKids, LocalDate birthday, double minimalSalary, double maximumSalary) {
+    public Worker(String name, int age, int height, int countOfKids, LocalDate birthday, double minimalSalary, double maximumSalary, String gender) {
         this.name = name;
         this.age = age;
         this.height = height;
@@ -11,6 +11,7 @@ public class Worker extends Person {
         this.birthday = birthday;
         this.minimalSalary = minimalSalary;
         this.maximumSalary = maximumSalary;
+        this.gender = gender;
 
     }
 
@@ -33,7 +34,7 @@ public class Worker extends Person {
 
 
     }
-    }
+}
 
 
 

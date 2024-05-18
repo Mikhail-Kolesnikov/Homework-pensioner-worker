@@ -3,7 +3,7 @@ import java.time.LocalDate;
 public class Pensioner extends Person {
     static final double PENSION_FOR_ALL_PENSIONERS = 2000;
 
-    public Pensioner(String name, int age, int height, int countOfKids, LocalDate birthday, double minimalSalary, double maximumSalary) {
+    public Pensioner(String name, int age, int height, int countOfKids, LocalDate birthday, double minimalSalary, double maximumSalary, String gender) {
         this.name = name;
         this.age = age;
         this.height = height;
@@ -11,6 +11,7 @@ public class Pensioner extends Person {
         this.birthday = birthday;
         this.minimalSalary = minimalSalary;
         this.maximumSalary = maximumSalary;
+        this.gender = gender;
     }
 
     @Override
@@ -30,7 +31,7 @@ public class Pensioner extends Person {
                 ", Максимальная зароботная плата=" + maximumSalary +
                 '}';
     }
-    }
+}
 
 
 
