@@ -1,14 +1,12 @@
-import java.time.LocalDate;
-
-public class Worker extends Person {
+public class Worker extends Person implements Efficient {
 
 
-    public Worker(String name, int age, int height, int countOfKids, LocalDate birthday, double minimalSalary, double maximumSalary, String gender) {
+    public Worker(String name, int age, int height, int countOfKids, int birthday, double minimalSalary, double maximumSalary, String gender) {
         this.name = name;
         this.age = age;
         this.height = height;
         this.countOfKids = countOfKids;
-        this.birthday = birthday;
+        this.birthday = birthdate;
         this.minimalSalary = minimalSalary;
         this.maximumSalary = maximumSalary;
         this.gender = gender;
@@ -34,6 +32,11 @@ public class Worker extends Person {
                 '}';
 
 
+    }
+
+    @Override
+    public void goToWork() {
+        System.out.println("Я счастливо шагаю на работу");
     }
 }
 

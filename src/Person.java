@@ -14,6 +14,7 @@ public abstract class Person {
     protected double minimalSalary;
     protected double maximumSalary;
     protected LocalDate birthdate;
+    protected String gender;
     static final int YEAR_OF_START_OF_WORK = 18;
 
 
@@ -23,6 +24,7 @@ public abstract class Person {
         System.out.println("Возраст: " + age + " лет");
         System.out.println("Количество детей " + countOfKids + " Детей");
         System.out.println("День рождегия " + birthday);
+        System.out.println("Пол" + gender);
 
         System.out.println();
 
@@ -168,7 +170,7 @@ public abstract class Person {
     }
 
 
-    }
+}
 
 
 
