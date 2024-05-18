@@ -3,8 +3,8 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
 
-        //       Pensioner pensioner = new Pensioner("Sid", 68, 176, 4, LocalDate.of(1934, 11, 23), 2000, 3500,"Мужской");
-        //      Worker worker = new Worker("Трудоголик", 38, 178, 2, LocalDate.of(1984, 9, 11), 2500, 4700,"Мужской");
+ //             Pensioner pensioner = new Pensioner("Sid", 68, 176, 4, LocalDate.of(1934, 11, 23), 2000, 3500,"Мужской");
+ //            Worker worker = new Worker("Трудоголик", 38, 178, 2, LocalDate.of(1984, 9, 11), 2500, 4700,"Мужской");
 
 
 //        PensionFund pensionFund = new PensionFund();
@@ -18,10 +18,12 @@ public class Main {
         Efficient b = new Pensioner("Павел", 68, 170, 4, 1968 - 11 - 24, 1500, 2500, "Муж");
 
 
+
         a.goToWork();
         b.goToWork();
-        Minors minors = new Minors();
-        minors.averageOfSalary();
+        Minors minors = new Minors(0,0);
+        System.out.println(minors.averageSalary());
+
 
 
     }
