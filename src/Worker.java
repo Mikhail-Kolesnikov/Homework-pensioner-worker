@@ -30,7 +30,7 @@ public class Worker extends Person {
                 ", Дата рождения=" + birthday +
                 ", Минимальная зароботная плата=" + minimalSalary +
                 ", Максимальная зароботная плата=" + maximumSalary +
-                ", Национальность=" + gender +
+                ", Пол=" + gender +
                 '}';
 
 
