@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Worker extends Person implements Efficient {
 
 
@@ -6,7 +8,7 @@ public class Worker extends Person implements Efficient {
         this.age = age;
         this.height = height;
         this.countOfKids = countOfKids;
-        this.birthday = birthdate;
+        this.birthday = LocalDate.ofEpochDay(birthday);
         this.minimalSalary = minimalSalary;
         this.maximumSalary = maximumSalary;
         this.gender = gender;

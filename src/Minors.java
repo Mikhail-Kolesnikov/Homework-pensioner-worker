@@ -8,12 +8,6 @@ public class Minors extends Person {
                 ", minimalSalary=" + minimalSalary +
                 '}';
     }
-
-//    public Minors(int minimalSalary, int maximumSalary) {
-//        this.maximumSalary = maximumSalary;
-//        this.minimalSalary = minimalSalary;
-//    }
-
     @Override
     double averageOfSalary() {
         return MainFindingTheAverage.averageForTwo(maximumSalary, minimalSalary);

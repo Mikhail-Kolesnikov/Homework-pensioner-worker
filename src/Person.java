@@ -13,7 +13,7 @@ public abstract class Person {
     protected LocalDate birthday;
     protected double minimalSalary;
     protected double maximumSalary;
-    protected LocalDate birthdate;
+//    protected LocalDate birthdate;
     protected String gender;
     static final int YEAR_OF_START_OF_WORK = 18;
 
@@ -135,7 +135,7 @@ public abstract class Person {
         if (Double.compare(person.maximumSalary, maximumSalary) != 0) return false;
         if (!Objects.equals(name, person.name)) return false;
         if (!Objects.equals(birthday, person.birthday)) return false;
-        return Objects.equals(birthdate, person.birthdate);
+        return Objects.equals(birthday, person.birthday);
     }
 
     @Override
@@ -151,7 +151,7 @@ public abstract class Person {
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         temp = Double.doubleToLongBits(maximumSalary);
         result = 31 * result + (int) (temp ^ (temp >>> 32));
-        result = 31 * result + (birthdate != null ? birthdate.hashCode() : 0);
+        result = 31 * result + (birthday != null ? birthday.hashCode() : 0);
         return result;
     }
 
@@ -165,7 +165,6 @@ public abstract class Person {
                 ", birthday=" + birthday +
                 ", minimalSalary=" + minimalSalary +
                 ", maximumSalary=" + maximumSalary +
-                ", birthdate=" + birthdate +
                 '}';
     }
 
